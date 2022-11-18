@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Шапка та навігація-->
-    <!-- модуль 5 -->
+    <!-- модуль 6 -->
     <header class="header">
       <div class="container header-block">
         <nav class="header-nav">
@@ -76,9 +76,109 @@
             <div class="modal">
               <button class="button-box" type="button" data-modal-close>
                 <svg class="icon-box" width="18px" height="18px">
-                  <use href="./images/main_page/close.svg#icon-close"></use>
+                  <use href="./images/main_page/icons.svg#icon-close"></use>
                 </svg>
               </button>
+              <div class="form">
+                <h2 class="title">Залиште свої дані, ми вам передзвонимо</h2>
+                <form autocomplete="off" action="" class="modal-form">
+                  <div class="form-field">
+                    <label for="name" class="modal-label">
+                      <span class="label-span">Ім'я</span>
+                      <div class="input-wrapper">
+                        <input
+                          type="text"
+                          name="username"
+                          id="name"
+                          class="form-input"
+                          required
+                        />
+                        <svg class="input-icon" width="12px" height="12px">
+                          <use
+                            href="./images/main_page/icons.svg#icon-person"
+                          ></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label for="tel" class="modal-label">
+                      <span class="label-span">Телефон</span>
+                      <div class="input-wrapper">
+                        <input
+                          type="tel"
+                          name="phone"
+                          id="tel"
+                          class="form-input"
+                          required
+                        />
+                        <svg class="input-icon" width="12px" height="12px">
+                          <use
+                            href="./images/main_page/icons.svg#icon-phone"
+                          ></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label for="email" class="modal-label">
+                      <span class="label-span">Пошта</span>
+                      <div class="input-wrapper">
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="form-input"
+                          required
+                        />
+                        <svg class="input-icon" width="12px" height="12px">
+                          <use
+                            href="./images/main_page/icons.svg#icon-email"
+                          ></use>
+                        </svg>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-field">
+                    <label for="comment">
+                      <span class="label-span">Коментар</span>
+                      <textarea
+                        class="modal-textarea"
+                        name="comment"
+                        id="comment"
+                        cols="8"
+                        rows="8"
+                        placeholder="Введіть текст"
+                      ></textarea>
+                    </label>
+                  </div>
+                  <div class="input-line check-line">
+                    <input
+                      type="checkbox"
+                      name="checkbox-agree"
+                      value="agree"
+                      id="checkbox-agree"
+                    />
+
+                    <label for="checkbox-agree" class="checkbox-agree">
+                      <span class="icon-wrapper"
+                        ><svg class="agree-icon" width="11px" height="8px">
+                          <use
+                            href="./images/main_page/icons.svg#icon-check"
+                          ></use></svg></span
+                      >Погоджуюся з розсилкою та приймаю<a
+                        href="#"
+                        class="link"
+                        target="_blank"
+                        rel="nofollow noreferrer noopener"
+                      >
+                        Умови договору</a
+                      ></label
+                    >
+                  </div>
+                  <button type="submit" class="modal-button">Відправити</button>
+                </form>
+              </div>
             </div>
           </div>
         </div>
@@ -593,6 +693,25 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="form-container">
+          <h3 class="form-title">Підпишіться на розсилку</h3>
+          <form action="" class="footer-form">
+            <label for="email" class="modal-label">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-input"
+                placeholder="E-mail"
+            /></label>
+            <button type="submit" class="footer-button">
+              Підписатися
+              <svg class="icon-button" width="24px" height="24px">
+                <use href="./images/main_page/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
