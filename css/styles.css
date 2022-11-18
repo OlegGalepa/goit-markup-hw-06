@@ -835,9 +835,11 @@ transform: translateY(0%);
     border-color: var(--accent-color);
     }
 
-
-
+.check-line {
+    margin-bottom: 30px;
+}
 .checkbox-agree {
+    
     display: flex;
     align-items: center;
     line-height: calc(24/14);
@@ -853,6 +855,13 @@ transform: translateY(0%);
     text-decoration: underline;
 }
 
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
 .checkbox-agree .icon-wrapper {
     display: flex;
     align-items: center;
@@ -861,6 +870,7 @@ transform: translateY(0%);
     width: 16px;
     height: 15px;
     margin-right: 8px;
+    margin-left: 14px;
     border: 2px solid #212121;
     border-radius: 2px;
     
@@ -869,11 +879,7 @@ transform: translateY(0%);
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    fill: transparent;
-    
-    
-    
-      
+    fill: transparent;        
 }
 
 .check-line input:checked + .checkbox-agree .icon-wrapper  {
@@ -885,13 +891,8 @@ transform: translateY(0%);
     fill: #fff;
 }
 
-
-
-
-
-
 .modal-button {
-    margin-top: 30px;
+    
     padding: 10px 52px;
     border-radius: 4px;
     
